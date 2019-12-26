@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: config-client-demo
+
+server:
+  port: 9200

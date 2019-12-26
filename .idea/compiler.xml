@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-demo" />
+        <module name="config-client-demo" />
+        <module name="order-demo" />
+        <module name="user-demo" />
+        <module name="zuul-demo" />
+        <module name="config-server-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-client-demo" target="1.8" />
+      <module name="config-server-demo" target="1.8" />
+      <module name="eureka-demo" target="1.8" />
+      <module name="order-demo" target="1.8" />
+      <module name="parent-demo" target="1.8" />
+      <module name="user-demo" target="1.8" />
+      <module name="zuul-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client-demo" options="-parameters" />
+      <module name="config-server-demo" options="-parameters" />
+      <module name="eureka-demo" options="-parameters" />
+      <module name="order-demo" options="-parameters" />
+      <module name="user-demo" options="-parameters" />
+      <module name="zuul-demo" options="-parameters" />
+    </option>
+  </component>
+</project>

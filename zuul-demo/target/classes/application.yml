@@ -1,0 +1,39 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+
+server:
+  port: 9000
+
+
+spring:
+  application:
+    name: hxr-zuul
+
+#ribbon:
+#  eureka:
+#    enabled: false
+
+# Ribbon请求的微服务serviceId
+
+#hxr-user:
+#  ribbon:
+#    listOfServers: http://www.huyu.com,http://www.douyu.com
+
+
+
+zuul:
+  routes:
+#    testurl:
+#      serviceId: hxr-user
+#      path: /testurl/**
+    api-order:
+      path: /api-order/**
+      serviceId: hxr-order
+    api-user:
+      path: /api-user/**
+      serviceId: hxr-user
+#  ignored-services: "*"
+#  prefix: /hxr
+

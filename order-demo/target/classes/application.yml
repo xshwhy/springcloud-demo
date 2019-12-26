@@ -1,0 +1,22 @@
+### 服务启动端口号
+
+server:
+  port: 8811
+### 服务名称(服务注册到eureka名称)
+
+spring:
+  application:
+    name: hxr-order
+
+### 服务注册到eureka地址
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+hxr-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+### 开启熔断器注解
+feign.hystrix.enabled: true
